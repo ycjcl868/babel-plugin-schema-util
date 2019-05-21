@@ -14,5 +14,17 @@ describe('Babel Inline Import - Plugin', () => {
         );
       }).toThrow(Error);
     });
+
+    it('throws error when importing schema', () => {
+      expect(() => {
+        babel.transform(
+          "import schema from './fixtures/schema/example2.schema';",
+          {
+            filename: __filename,
+            plugins: [BabelInlineImportPlugin]
+          }
+        );
+      }).toThrowError();
+    });
   });
 });

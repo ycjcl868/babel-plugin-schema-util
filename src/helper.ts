@@ -52,7 +52,8 @@ export default class BabelInlineImportHelper {
 
     const rawContent = fs.readFileSync(mod.src).toString();
     const loader = BabelInlineImportHelper.getLoader(givenPath, extensions || BabelInlineImportHelper.extensions);
-    const content = loader(rawContent);
+
+    const content = loader(rawContent, mod.src);
     return content;
   }
 
