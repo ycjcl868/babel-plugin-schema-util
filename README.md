@@ -1,4 +1,4 @@
-# Babel Schema Util ![Build Status](https://travis-ci.org/ycjcl868/babel-plugin-schema-util.svg?branch=master) [![Codecov](https://img.shields.io/codecov/c/github/ycjcl868/babel-plugin-schema-util/master.svg?style=flat-square)](https://codecov.io/gh/ycjcl868/babel-plugin-schema-util/branch/master) [![npm package](https://img.shields.io/npm/v/babel-plugin-schema-util.svg?style=flat-square)](https://www.npmjs.org/package/babel-plugin-schema-util)
+# Babel Schema Util [![Build Status](https://travis-ci.org/ycjcl868/babel-plugin-schema-util.svg?branch=master)](https://travis-ci.org/ycjcl868/babel-plugin-schema-util) [![Codecov](https://img.shields.io/codecov/c/github/ycjcl868/babel-plugin-schema-util/master.svg?style=flat-square)](https://codecov.io/gh/ycjcl868/babel-plugin-schema-util/branch/master) [![npm package](https://img.shields.io/npm/v/babel-plugin-schema-util.svg?style=flat-square)](https://www.npmjs.org/package/babel-plugin-schema-util)
 
 forked by [babel-plugin-inline-import](https://github.com/credcollective/babel-plugin-inline-import), **you can apply different handler functions into the different files.**
 
