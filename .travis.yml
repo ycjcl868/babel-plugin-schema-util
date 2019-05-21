@@ -5,4 +5,5 @@ before_script:
   - npm run build
 script:
   - npm run coverage
-  - codecov -f coverage/*.json
+after_success:
+  - codecov
