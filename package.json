@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-schema-util",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Babel plugin to make different files importable with your processing function.",
   "author": "ycjcl868",
   "license": "MIT",
