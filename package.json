@@ -1,0 +1,52 @@
+{
+  "name": "babel-plugin-schema-util",
+  "version": "1.0.0-beta",
+  "description": "Babel plugin to make different files importable with your processing function.",
+  "author": "ycjcl868",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "package.json"
+  ],
+  "keywords": [
+    "babel-plugin",
+    "schema-util",
+    "handler function",
+    "raw",
+    "extension",
+    "wrap",
+    "import",
+    "inline"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ycjcl868/babel-plugin-schema-util.git"
+  },
+  "scripts": {
+    "build": "umi-tools build",
+    "coverage": "umi-tools build && umi-tools test --coverage",
+    "test": "npm run build && umi-tools test",
+    "test-watch": "umi-tools test --watch",
+    "lint-js": "eslint plugin",
+    "prepare": "babel -d build/ plugin/"
+  },
+  "dependencies": {
+    "require-resolve": "0.0.2",
+    "schema-util": "^3.4.2"
+  },
+  "babel": {
+    "presets": [
+      "umi"
+    ]
+  },
+  "devDependencies": {
+    "@babel/types": "^7.4.4",
+    "@types/jest": "^24.0.13",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-tester": "^6.2.1",
+    "babel-preset-umi": "^1.4.1",
+    "eslint": "^5.16.0",
+    "umi-tools": "^0.4.0"
+  }
+}

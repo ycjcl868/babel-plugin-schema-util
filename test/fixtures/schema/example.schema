@@ -1,0 +1,6 @@
+Array(foo) {
+  href(href),
+  title(title),
+  img(image url): Image,
+  amount(money amout)
+}
