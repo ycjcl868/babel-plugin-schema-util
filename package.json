@@ -29,7 +29,8 @@
     "test": "npm run build && umi-tools test",
     "test-watch": "umi-tools test --watch",
     "lint-js": "eslint plugin",
-    "prepare": "babel -d build/ plugin/"
+    "prepare": "babel -d build/ plugin/",
+    "prepublishOnly": "npm run test"
   },
   "dependencies": {
     "require-resolve": "0.0.2",
