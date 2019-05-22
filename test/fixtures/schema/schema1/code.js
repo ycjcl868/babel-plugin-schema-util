@@ -1,1 +1,1 @@
-import schema from '../example.schema';
+import schema from './example.schema';

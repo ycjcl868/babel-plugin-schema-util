@@ -1,5 +1,5 @@
 import BabelInlineImportHelper from '../lib/helper';
-import schemaLoader from '../lib/schemaLoader';
+import schemaLoader from '../lib/loader/schemaLoader';
 
 describe('Babel Inline Import - Helper', () => {
 
@@ -61,10 +61,6 @@ describe('Babel Inline Import - Helper', () => {
       expect(() => {
         BabelInlineImportHelper.getContents('non_existent.raw', __filename);
       }).toThrow(Error);
-    });
-
-    it('returns file content', () => {
-      expect(BabelInlineImportHelper.getContents('./fixtures/raw/example.raw', __filename)).toBe('a raw content\n');
     });
   });
 

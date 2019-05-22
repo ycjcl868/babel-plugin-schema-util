@@ -5,6 +5,7 @@
   "author": "ycjcl868",
   "license": "MIT",
   "main": "lib/index.js",
+  "module": "es/index.js",
   "files": [
     "lib",
     "package.json"
@@ -24,27 +25,30 @@
     "url": "https://github.com/ycjcl868/babel-plugin-schema-util.git"
   },
   "scripts": {
-    "build": "umi-tools build",
-    "coverage": "umi-tools build && umi-tools test --coverage",
-    "test": "npm run build && umi-tools test",
-    "test-watch": "umi-tools test --watch",
+    "build": "umi-lib build",
+    "coverage": "umi-lib build && umi-test --coverage",
+    "test": "npm run build && umi-test",
+    "test-watch": "umi-test test --watch",
     "lint-js": "eslint plugin",
     "prepublishOnly": "npm run test"
   },
   "dependencies": {
-    "require-resolve": "0.0.2",
-    "schema-util": "^3.4.2",
     "@babel/helper-module-imports": "^7.0.0",
-    "@babel/runtime": "^7.0.0"
+    "@babel/parser": "^7.4.5",
+    "@babel/runtime": "^7.0.0",
+    "@babel/traverse": "^7.4.5",
+    "require-resolve": "0.0.2",
+    "schema-util": "^3.4.2"
   },
   "devDependencies": {
-    "@babel/types": "^7.4.4",
     "@babel/core": "^7.0.0",
-    "babel-core": "^7.0.0-0",
+    "@babel/types": "^7.4.4",
     "@types/jest": "^24.0.13",
+    "babel-core": "^7.0.0-0",
     "babel-eslint": "^10.0.1",
     "babel-plugin-tester": "^6.2.1",
     "eslint": "^5.16.0",
-    "umi-tools": "^0.4.0"
+    "umi-library": "^1.5.1",
+    "umi-test": "^1.5.7"
   }
 }

@@ -1,0 +1,17 @@
+Object(a_0) {
+  carouselWrapper(b): Object{
+    children(c$remark=d): Array{
+      children(e): Object{
+        href(f),
+        target(g): Enum{
+          _blank(h),
+          _self(i),
+        }
+        title(j): Object{
+          children(k),
+        },
+        children(l),
+      }
+    },
+  },
+}

@@ -24,7 +24,28 @@ import demo from './demo';
 
 ```javascript
 // /build/a.js
-var demo = "{\"type\":\"array\",\"description\":\"foo\",\"properties\":{\"href\":{\"type\":\"string\",\"description\":\"href\"},\"title\":{\"type\":\"string\",\"description\":\"title\"},\"img\":{\"type\":\"image\",\"description\":\"image url\"},\"amount\":{\"type\":\"string\",\"description\":\"money amout\"}}}";
+var demo = {
+  "type": "array",
+  "description": "foo",
+  "properties": {
+    "href": {
+      "type": "string",
+      "description": "href"
+    },
+    "title": {
+      "type": "string",
+      "description": "title"
+    },
+    "img": {
+      "type": "image",
+      "description": "image url"
+    },
+    "amount": {
+      "type": "string",
+      "description": "money amout"
+    }
+  }
+};
 
 ```
 
@@ -68,7 +89,7 @@ If you want to enable different file extensions, you can define them in your `.b
         ".sql",
         {
           name: ".schema2",
-          loader: (content) => `~${content}~`,
+          loader: (content, filepath) => `~${content}~`,
         }
       ]
     }]

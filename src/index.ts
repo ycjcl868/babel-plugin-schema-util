@@ -2,6 +2,7 @@
 import * as BabelTypes from '@babel/types';
 import BabelInlineImportHelper from './helper';
 
+const parser = require('@babel/parser').parse;
 export default function (babel) {
   const t = babel.types as typeof BabelTypes;;
 
@@ -21,8 +22,8 @@ export default function (babel) {
                 }
 
                 const id = path.node.specifiers[0].local.name;
-                const content = BabelInlineImportHelper.getContents(givenPath, reference, extensions);
-                const variable = t.variableDeclarator(t.identifier(id), t.stringLiteral(content));
+                const literal = BabelInlineImportHelper.getContents(givenPath, reference, extensions);
+                const variable = t.variableDeclarator(t.identifier(id), literal);
 
                 path.replaceWith({
                   type: 'VariableDeclaration',
