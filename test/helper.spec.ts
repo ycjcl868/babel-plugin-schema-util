@@ -42,12 +42,6 @@ describe('Babel Inline Import - Helper', () => {
         const shouldIt = BabelInlineImportHelper.shouldBeInlined('example.raw', ['.python']);
         expect(shouldIt).toBeFalsy();
       });
-
-      it('throws error if no array or string is passed as extensions', () => {
-        expect(() => {
-          BabelInlineImportHelper.shouldBeInlined('example.raw', true);
-        }).toThrow(Error);
-      });
   });
 
   describe('getContents', () => {
