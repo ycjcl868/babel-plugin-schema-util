@@ -8,6 +8,7 @@
   "module": "es/index.js",
   "files": [
     "lib",
+    "es",
     "package.json"
   ],
   "keywords": [
@@ -26,6 +27,7 @@
   },
   "scripts": {
     "build": "umi-lib build",
+    "watch": "umi-lib build --watch",
     "coverage": "umi-lib build && umi-test --coverage",
     "test": "npm run build && umi-test",
     "test-watch": "umi-test test --watch",
@@ -37,6 +39,7 @@
     "@babel/parser": "^7.4.5",
     "@babel/runtime": "^7.0.0",
     "@babel/traverse": "^7.4.5",
+    "babel-errors": "^1.1.1",
     "require-resolve": "0.0.2",
     "schema-util": "^3.4.2"
   },

@@ -6,6 +6,7 @@ export default (content: string, src: string) => {
     return res;
   } catch (e) {
     e.message = `${src}: ${e.message}`
+    console.error(e.message);
     throw e;
   }
 };

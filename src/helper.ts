@@ -18,7 +18,7 @@ export default class BabelInlineImportHelper {
       loader: schemaLoader,
     }
   ];
-  static root = global.rootPath || process.cwd();
+  static root = (global as any).rootPath || process.cwd();
   // ['.a', '.b', '.c', { name: '.d', loader: (content) => `~~${content}~~` }]
   static shouldBeInlined(givenPath, extensions) {
     const accept = (typeof extensions === 'string')

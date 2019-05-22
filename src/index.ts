@@ -2,7 +2,6 @@
 import * as BabelTypes from '@babel/types';
 import BabelInlineImportHelper from './helper';
 
-const parser = require('@babel/parser').parse;
 export default function (babel) {
   const t = babel.types as typeof BabelTypes;;
 
